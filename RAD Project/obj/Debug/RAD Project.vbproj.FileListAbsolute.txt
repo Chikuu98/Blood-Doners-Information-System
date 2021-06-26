@@ -1,0 +1,28 @@
+D:\RAD Project\RAD Project\bin\Debug\RAD Project.exe.config
+D:\RAD Project\RAD Project\bin\Debug\RAD Project.exe
+D:\RAD Project\RAD Project\bin\Debug\RAD Project.pdb
+D:\RAD Project\RAD Project\bin\Debug\RAD Project.xml
+D:\RAD Project\RAD Project\obj\Debug\RAD Project.vbproj.AssemblyReference.cache
+D:\RAD Project\RAD Project\obj\Debug\RAD_Project.AdminLogin.resources
+D:\RAD Project\RAD Project\obj\Debug\RAD_Project.Welcome.resources
+D:\RAD Project\RAD Project\obj\Debug\RAD_Project.Resources.resources
+D:\RAD Project\RAD Project\obj\Debug\RAD Project.vbproj.GenerateResource.cache
+D:\RAD Project\RAD Project\obj\Debug\RAD Project.vbproj.CoreCompileInputs.cache
+D:\RAD Project\RAD Project\obj\Debug\RAD Project.exe
+D:\RAD Project\RAD Project\obj\Debug\RAD Project.xml
+D:\RAD Project\RAD Project\obj\Debug\RAD Project.pdb
+D:\RAD Project\RAD Project\obj\Debug\RAD_Project.Registration.resources
+D:\.net\RAD Project\RAD Project\bin\Debug\RAD Project.exe.config
+D:\.net\RAD Project\RAD Project\bin\Debug\RAD Project.exe
+D:\.net\RAD Project\RAD Project\bin\Debug\RAD Project.pdb
+D:\.net\RAD Project\RAD Project\bin\Debug\RAD Project.xml
+D:\.net\RAD Project\RAD Project\obj\Debug\RAD Project.vbproj.AssemblyReference.cache
+D:\.net\RAD Project\RAD Project\obj\Debug\RAD_Project.AdminLogin.resources
+D:\.net\RAD Project\RAD Project\obj\Debug\RAD_Project.Welcome.resources
+D:\.net\RAD Project\RAD Project\obj\Debug\RAD_Project.Resources.resources
+D:\.net\RAD Project\RAD Project\obj\Debug\RAD_Project.Registration.resources
+D:\.net\RAD Project\RAD Project\obj\Debug\RAD Project.vbproj.GenerateResource.cache
+D:\.net\RAD Project\RAD Project\obj\Debug\RAD Project.vbproj.CoreCompileInputs.cache
+D:\.net\RAD Project\RAD Project\obj\Debug\RAD Project.exe
+D:\.net\RAD Project\RAD Project\obj\Debug\RAD Project.xml
+D:\.net\RAD Project\RAD Project\obj\Debug\RAD Project.pdb
