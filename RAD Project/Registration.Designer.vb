@@ -172,7 +172,7 @@ Partial Class Registration
         '
         'btnBack
         '
-        Me.btnBack.BackColor = System.Drawing.Color.White
+        Me.btnBack.BackColor = System.Drawing.Color.Yellow
         Me.btnBack.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBack.ForeColor = System.Drawing.Color.DarkRed
         Me.btnBack.Location = New System.Drawing.Point(502, 367)
@@ -186,7 +186,7 @@ Partial Class Registration
         '
         Me.ComboBloodG.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBloodG.FormattingEnabled = True
-        Me.ComboBloodG.Items.AddRange(New Object() {"A", "B", "O", "AB"})
+        Me.ComboBloodG.Items.AddRange(New Object() {"A", "B", "O", "AB", "A+", "B+", "O+", "A-", "B-", "O-"})
         Me.ComboBloodG.Location = New System.Drawing.Point(303, 260)
         Me.ComboBloodG.Name = "ComboBloodG"
         Me.ComboBloodG.Size = New System.Drawing.Size(164, 21)

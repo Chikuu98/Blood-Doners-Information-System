@@ -15,7 +15,7 @@
 
     Private Sub btnlogin_Click(sender As Object, e As EventArgs) Handles btnlogin.Click
         If txtUserName.Text = "Admin" And txtPassword.Text = "12345" Then
-            Welcome.Show()
+            DonnerDetails.Show()
             Me.Hide()
         Else
             MsgBox("Invalid UserName or Password ? Try Again..!")

@@ -79,6 +79,20 @@
     <Compile Include="AdminLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DonnerDetails.Designer.vb">
+      <DependentUpon>DonnerDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DonnerDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="donner_detailsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>donner_detailsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="donner_detailsDataSet.vb">
+      <DependentUpon>donner_detailsDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +127,9 @@
     <EmbeddedResource Include="AdminLogin.resx">
       <DependentUpon>AdminLogin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DonnerDetails.resx">
+      <DependentUpon>DonnerDetails.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +144,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="donner_detailsDataSet.xsc">
+      <DependentUpon>donner_detailsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="donner_detailsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>donner_detailsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="donner_detailsDataSet.xss">
+      <DependentUpon>donner_detailsDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
