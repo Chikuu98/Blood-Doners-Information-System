@@ -8,4 +8,9 @@
         Registration.Show()
         Me.Hide()
     End Sub
+
+    Private Sub btnDetails_Click(sender As Object, e As EventArgs) Handles btnDetails.Click
+        PublicDetailShow.Show()
+        Me.Hide()
+    End Sub
 End Class
