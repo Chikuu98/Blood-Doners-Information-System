@@ -50,9 +50,9 @@ Partial Class PublicDetailShow
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Snow
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Red
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(174, 27)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(311, 38)
@@ -61,12 +61,12 @@ Partial Class PublicDetailShow
         '
         'btnExit
         '
-        Me.btnExit.BackColor = System.Drawing.Color.Yellow
+        Me.btnExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btnExit.Font = New System.Drawing.Font("Roboto Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.ForeColor = System.Drawing.Color.Red
-        Me.btnExit.Location = New System.Drawing.Point(597, 449)
+        Me.btnExit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnExit.Location = New System.Drawing.Point(585, 451)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(57, 25)
+        Me.btnExit.Size = New System.Drawing.Size(69, 31)
         Me.btnExit.TabIndex = 3
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = False
@@ -74,7 +74,7 @@ Partial Class PublicDetailShow
         'DetailsDataGridView
         '
         Me.DetailsDataGridView.AutoGenerateColumns = False
-        Me.DetailsDataGridView.BackgroundColor = System.Drawing.Color.DarkRed
+        Me.DetailsDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.DetailsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DetailsDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
         Me.DetailsDataGridView.DataSource = Me.DetailsBindingSource
@@ -87,12 +87,12 @@ Partial Class PublicDetailShow
         '
         'btnBack
         '
-        Me.btnBack.BackColor = System.Drawing.Color.Yellow
+        Me.btnBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btnBack.Font = New System.Drawing.Font("Roboto Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBack.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnBack.Location = New System.Drawing.Point(533, 451)
+        Me.btnBack.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnBack.Location = New System.Drawing.Point(512, 451)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(58, 23)
+        Me.btnBack.Size = New System.Drawing.Size(67, 31)
         Me.btnBack.TabIndex = 4
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = False
@@ -161,7 +161,7 @@ Partial Class PublicDetailShow
         '
         'SeeResultToolStrip
         '
-        Me.SeeResultToolStrip.BackColor = System.Drawing.Color.Yellow
+        Me.SeeResultToolStrip.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.SeeResultToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BloodTypeToolStripLabel, Me.BloodTypeToolStripTextBox, Me.SeeResultToolStripButton})
         Me.SeeResultToolStrip.Location = New System.Drawing.Point(0, 0)
         Me.SeeResultToolStrip.Name = "SeeResultToolStrip"
@@ -191,14 +191,14 @@ Partial Class PublicDetailShow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Salmon
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(674, 494)
         Me.Controls.Add(Me.SeeResultToolStrip)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.DetailsDataGridView)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.Label1)
-        Me.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.ForeColor = System.Drawing.Color.Maroon
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "PublicDetailShow"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

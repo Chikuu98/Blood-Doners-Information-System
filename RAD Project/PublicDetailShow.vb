@@ -8,6 +8,9 @@
 
     Private Sub PublicDetailShow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'Donner_detailsDataSet.Details' table. You can move, or remove it, as needed.
+        Me.DetailsDataGridView.Refresh()
+        Me.DetailsBindingSource.DataSource = DetailsTableAdapter.GetData()
+        Me.DetailsBindingSource.ResetBindings(False)
         Me.DetailsTableAdapter.Fill(Me.Donner_detailsDataSet.Details)
 
     End Sub

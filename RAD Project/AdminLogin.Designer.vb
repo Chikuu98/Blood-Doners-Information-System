@@ -36,9 +36,9 @@ Partial Class AdminLogin
         'lbladmintopic
         '
         Me.lbladmintopic.AutoSize = True
-        Me.lbladmintopic.BackColor = System.Drawing.Color.White
+        Me.lbladmintopic.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lbladmintopic.Font = New System.Drawing.Font("Roboto", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbladmintopic.ForeColor = System.Drawing.Color.Red
+        Me.lbladmintopic.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lbladmintopic.Location = New System.Drawing.Point(209, 60)
         Me.lbladmintopic.Name = "lbladmintopic"
         Me.lbladmintopic.Size = New System.Drawing.Size(217, 44)
@@ -49,7 +49,7 @@ Partial Class AdminLogin
         '
         Me.lblusername.AutoSize = True
         Me.lblusername.Font = New System.Drawing.Font("Roboto Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblusername.ForeColor = System.Drawing.SystemColors.Menu
+        Me.lblusername.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblusername.Location = New System.Drawing.Point(124, 165)
         Me.lblusername.Name = "lblusername"
         Me.lblusername.Size = New System.Drawing.Size(98, 19)
@@ -60,7 +60,7 @@ Partial Class AdminLogin
         '
         Me.lblpassword.AutoSize = True
         Me.lblpassword.Font = New System.Drawing.Font("Roboto Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblpassword.ForeColor = System.Drawing.SystemColors.Menu
+        Me.lblpassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblpassword.Location = New System.Drawing.Point(124, 218)
         Me.lblpassword.Name = "lblpassword"
         Me.lblpassword.Size = New System.Drawing.Size(88, 19)
@@ -69,7 +69,7 @@ Partial Class AdminLogin
         '
         'txtUserName
         '
-        Me.txtUserName.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.txtUserName.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtUserName.Font = New System.Drawing.Font("Roboto Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUserName.Location = New System.Drawing.Point(347, 161)
         Me.txtUserName.Name = "txtUserName"
@@ -78,7 +78,7 @@ Partial Class AdminLogin
         '
         'txtPassword
         '
-        Me.txtPassword.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.txtPassword.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtPassword.Font = New System.Drawing.Font("Roboto Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPassword.Location = New System.Drawing.Point(347, 214)
         Me.txtPassword.Name = "txtPassword"
@@ -88,7 +88,7 @@ Partial Class AdminLogin
         '
         'btnlogin
         '
-        Me.btnlogin.BackColor = System.Drawing.Color.Red
+        Me.btnlogin.BackColor = System.Drawing.Color.DarkRed
         Me.btnlogin.Font = New System.Drawing.Font("Roboto Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnlogin.ForeColor = System.Drawing.SystemColors.Menu
         Me.btnlogin.Location = New System.Drawing.Point(128, 286)
@@ -100,7 +100,7 @@ Partial Class AdminLogin
         '
         'btnClear
         '
-        Me.btnClear.BackColor = System.Drawing.Color.Red
+        Me.btnClear.BackColor = System.Drawing.Color.DarkRed
         Me.btnClear.Font = New System.Drawing.Font("Roboto Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.ForeColor = System.Drawing.SystemColors.Menu
         Me.btnClear.Location = New System.Drawing.Point(251, 286)
@@ -112,7 +112,7 @@ Partial Class AdminLogin
         '
         'btnExit
         '
-        Me.btnExit.BackColor = System.Drawing.Color.Red
+        Me.btnExit.BackColor = System.Drawing.Color.DarkRed
         Me.btnExit.Font = New System.Drawing.Font("Roboto Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.ForeColor = System.Drawing.SystemColors.Menu
         Me.btnExit.Location = New System.Drawing.Point(383, 286)
@@ -124,7 +124,7 @@ Partial Class AdminLogin
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.Yellow
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Button1.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.DarkRed
         Me.Button1.Location = New System.Drawing.Point(547, 344)
@@ -138,7 +138,7 @@ Partial Class AdminLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.DarkRed
+        Me.BackColor = System.Drawing.Color.Maroon
         Me.ClientSize = New System.Drawing.Size(636, 379)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnExit)

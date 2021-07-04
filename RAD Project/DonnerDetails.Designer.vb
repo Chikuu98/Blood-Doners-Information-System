@@ -31,6 +31,8 @@ Partial Class DonnerDetails
         Dim How_Many_TimesLabel As System.Windows.Forms.Label
         Me.btnBack = New System.Windows.Forms.Button()
         Me.First_NameTextBox = New System.Windows.Forms.TextBox()
+        Me.DetailsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Donner_detailsDataSet = New RAD_Project.donner_detailsDataSet()
         Me.Last_NameTextBox = New System.Windows.Forms.TextBox()
         Me.AgeTextBox = New System.Windows.Forms.TextBox()
         Me.Contact_NoTextBox = New System.Windows.Forms.TextBox()
@@ -45,8 +47,6 @@ Partial Class DonnerDetails
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DetailsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Donner_detailsDataSet = New RAD_Project.donner_detailsDataSet()
         Me.DetailsTableAdapter = New RAD_Project.donner_detailsDataSetTableAdapters.DetailsTableAdapter()
         Me.TableAdapterManager = New RAD_Project.donner_detailsDataSetTableAdapters.TableAdapterManager()
         Me.Blood_GroupTextBox = New System.Windows.Forms.TextBox()
@@ -56,9 +56,9 @@ Partial Class DonnerDetails
         Contact_NoLabel = New System.Windows.Forms.Label()
         Blood_GroupLabel = New System.Windows.Forms.Label()
         How_Many_TimesLabel = New System.Windows.Forms.Label()
-        CType(Me.DetailsDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DetailsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Donner_detailsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DetailsDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'First_NameLabel
@@ -129,7 +129,7 @@ Partial Class DonnerDetails
         '
         'btnBack
         '
-        Me.btnBack.BackColor = System.Drawing.Color.Yellow
+        Me.btnBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btnBack.Font = New System.Drawing.Font("Roboto Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBack.ForeColor = System.Drawing.Color.DarkRed
         Me.btnBack.Location = New System.Drawing.Point(595, 392)
@@ -141,14 +141,26 @@ Partial Class DonnerDetails
         '
         'First_NameTextBox
         '
+        Me.First_NameTextBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.First_NameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DetailsBindingSource, "First_Name", True))
         Me.First_NameTextBox.Location = New System.Drawing.Point(99, 299)
         Me.First_NameTextBox.Name = "First_NameTextBox"
         Me.First_NameTextBox.Size = New System.Drawing.Size(117, 20)
         Me.First_NameTextBox.TabIndex = 4
         '
+        'DetailsBindingSource
+        '
+        Me.DetailsBindingSource.DataMember = "Details"
+        Me.DetailsBindingSource.DataSource = Me.Donner_detailsDataSet
+        '
+        'Donner_detailsDataSet
+        '
+        Me.Donner_detailsDataSet.DataSetName = "donner_detailsDataSet"
+        Me.Donner_detailsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'Last_NameTextBox
         '
+        Me.Last_NameTextBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Last_NameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DetailsBindingSource, "Last_Name", True))
         Me.Last_NameTextBox.Location = New System.Drawing.Point(99, 329)
         Me.Last_NameTextBox.Name = "Last_NameTextBox"
@@ -157,6 +169,7 @@ Partial Class DonnerDetails
         '
         'AgeTextBox
         '
+        Me.AgeTextBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.AgeTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DetailsBindingSource, "Age", True))
         Me.AgeTextBox.Location = New System.Drawing.Point(356, 299)
         Me.AgeTextBox.Name = "AgeTextBox"
@@ -165,6 +178,7 @@ Partial Class DonnerDetails
         '
         'Contact_NoTextBox
         '
+        Me.Contact_NoTextBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Contact_NoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DetailsBindingSource, "Contact_No", True))
         Me.Contact_NoTextBox.Location = New System.Drawing.Point(356, 329)
         Me.Contact_NoTextBox.Name = "Contact_NoTextBox"
@@ -173,6 +187,7 @@ Partial Class DonnerDetails
         '
         'How_Many_TimesTextBox
         '
+        Me.How_Many_TimesTextBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.How_Many_TimesTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DetailsBindingSource, "How_Many_Times", True))
         Me.How_Many_TimesTextBox.Location = New System.Drawing.Point(378, 358)
         Me.How_Many_TimesTextBox.Name = "How_Many_TimesTextBox"
@@ -207,7 +222,7 @@ Partial Class DonnerDetails
         '
         Me.btnDelete.BackColor = System.Drawing.Color.Red
         Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelete.ForeColor = System.Drawing.Color.DarkRed
+        Me.btnDelete.ForeColor = System.Drawing.Color.White
         Me.btnDelete.Location = New System.Drawing.Point(525, 356)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(75, 23)
@@ -264,16 +279,6 @@ Partial Class DonnerDetails
         Me.DataGridViewTextBoxColumn7.HeaderText = "How_Many_Times"
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         '
-        'DetailsBindingSource
-        '
-        Me.DetailsBindingSource.DataMember = "Details"
-        Me.DetailsBindingSource.DataSource = Me.Donner_detailsDataSet
-        '
-        'Donner_detailsDataSet
-        '
-        Me.Donner_detailsDataSet.DataSetName = "donner_detailsDataSet"
-        Me.Donner_detailsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'DetailsTableAdapter
         '
         Me.DetailsTableAdapter.ClearBeforeFill = True
@@ -286,6 +291,7 @@ Partial Class DonnerDetails
         '
         'Blood_GroupTextBox
         '
+        Me.Blood_GroupTextBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Blood_GroupTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DetailsBindingSource, "Blood_Group", True))
         Me.Blood_GroupTextBox.Location = New System.Drawing.Point(116, 358)
         Me.Blood_GroupTextBox.Name = "Blood_GroupTextBox"
@@ -319,9 +325,9 @@ Partial Class DonnerDetails
         Me.Name = "DonnerDetails"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "DonnerDetails"
-        CType(Me.DetailsDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DetailsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Donner_detailsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DetailsDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

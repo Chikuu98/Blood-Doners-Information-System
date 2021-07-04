@@ -33,10 +33,10 @@ Partial Class Welcome
         'lbltitle
         '
         Me.lbltitle.AutoSize = True
-        Me.lbltitle.BackColor = System.Drawing.Color.White
+        Me.lbltitle.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lbltitle.Font = New System.Drawing.Font("Roboto", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbltitle.ForeColor = System.Drawing.Color.Maroon
-        Me.lbltitle.Location = New System.Drawing.Point(106, 42)
+        Me.lbltitle.ForeColor = System.Drawing.Color.DarkRed
+        Me.lbltitle.Location = New System.Drawing.Point(69, 45)
         Me.lbltitle.Name = "lbltitle"
         Me.lbltitle.Size = New System.Drawing.Size(586, 44)
         Me.lbltitle.TabIndex = 0
@@ -45,10 +45,10 @@ Partial Class Welcome
         'lblwelcome
         '
         Me.lblwelcome.AutoSize = True
-        Me.lblwelcome.BackColor = System.Drawing.Color.Maroon
+        Me.lblwelcome.BackColor = System.Drawing.Color.Transparent
         Me.lblwelcome.Font = New System.Drawing.Font("Roboto", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblwelcome.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblwelcome.Location = New System.Drawing.Point(348, 156)
+        Me.lblwelcome.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblwelcome.Location = New System.Drawing.Point(321, 142)
         Me.lblwelcome.Name = "lblwelcome"
         Me.lblwelcome.Size = New System.Drawing.Size(105, 23)
         Me.lblwelcome.TabIndex = 1
@@ -56,10 +56,10 @@ Partial Class Welcome
         '
         'btnregister
         '
-        Me.btnregister.BackColor = System.Drawing.Color.Red
+        Me.btnregister.BackColor = System.Drawing.Color.Maroon
         Me.btnregister.Font = New System.Drawing.Font("Roboto Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnregister.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnregister.Location = New System.Drawing.Point(114, 291)
+        Me.btnregister.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnregister.Location = New System.Drawing.Point(59, 291)
         Me.btnregister.Name = "btnregister"
         Me.btnregister.Size = New System.Drawing.Size(135, 42)
         Me.btnregister.TabIndex = 2
@@ -68,10 +68,10 @@ Partial Class Welcome
         '
         'btnAdmin
         '
-        Me.btnAdmin.BackColor = System.Drawing.Color.Firebrick
+        Me.btnAdmin.BackColor = System.Drawing.Color.Maroon
         Me.btnAdmin.Font = New System.Drawing.Font("Roboto Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdmin.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnAdmin.Location = New System.Drawing.Point(325, 291)
+        Me.btnAdmin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnAdmin.Location = New System.Drawing.Point(281, 291)
         Me.btnAdmin.Name = "btnAdmin"
         Me.btnAdmin.Size = New System.Drawing.Size(145, 42)
         Me.btnAdmin.TabIndex = 3
@@ -80,10 +80,10 @@ Partial Class Welcome
         '
         'btnDetails
         '
-        Me.btnDetails.BackColor = System.Drawing.Color.Red
+        Me.btnDetails.BackColor = System.Drawing.Color.Maroon
         Me.btnDetails.Font = New System.Drawing.Font("Roboto Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDetails.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnDetails.Location = New System.Drawing.Point(548, 291)
+        Me.btnDetails.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnDetails.Location = New System.Drawing.Point(511, 291)
         Me.btnDetails.Name = "btnDetails"
         Me.btnDetails.Size = New System.Drawing.Size(144, 42)
         Me.btnDetails.TabIndex = 4
@@ -94,8 +94,8 @@ Partial Class Welcome
         '
         Me.lbldesc.AutoSize = True
         Me.lbldesc.Font = New System.Drawing.Font("Roboto", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbldesc.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.lbldesc.Location = New System.Drawing.Point(108, 193)
+        Me.lbldesc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lbldesc.Location = New System.Drawing.Point(71, 187)
         Me.lbldesc.Name = "lbldesc"
         Me.lbldesc.Size = New System.Drawing.Size(584, 25)
         Me.lbldesc.TabIndex = 5
@@ -106,7 +106,7 @@ Partial Class Welcome
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Maroon
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(717, 383)
         Me.Controls.Add(Me.lbldesc)
         Me.Controls.Add(Me.btnDetails)
         Me.Controls.Add(Me.btnAdmin)

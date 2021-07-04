@@ -13,4 +13,8 @@
         PublicDetailShow.Show()
         Me.Hide()
     End Sub
+
+    Private Sub lblwelcome_Click(sender As Object, e As EventArgs) Handles lblwelcome.Click
+
+    End Sub
 End Class

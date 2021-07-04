@@ -43,9 +43,9 @@ Partial Class Registration
         'lblreg
         '
         Me.lblreg.AutoSize = True
-        Me.lblreg.BackColor = System.Drawing.Color.Gold
+        Me.lblreg.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblreg.Font = New System.Drawing.Font("Roboto", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblreg.ForeColor = System.Drawing.Color.Red
+        Me.lblreg.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblreg.Location = New System.Drawing.Point(164, 20)
         Me.lblreg.Name = "lblreg"
         Me.lblreg.Size = New System.Drawing.Size(280, 44)
@@ -56,7 +56,7 @@ Partial Class Registration
         '
         Me.lblFirstName.AutoSize = True
         Me.lblFirstName.Font = New System.Drawing.Font("Roboto Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFirstName.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lblFirstName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblFirstName.Location = New System.Drawing.Point(123, 110)
         Me.lblFirstName.Name = "lblFirstName"
         Me.lblFirstName.Size = New System.Drawing.Size(80, 15)
@@ -67,7 +67,7 @@ Partial Class Registration
         '
         Me.lblLastName.AutoSize = True
         Me.lblLastName.Font = New System.Drawing.Font("Roboto Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLastName.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lblLastName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblLastName.Location = New System.Drawing.Point(123, 148)
         Me.lblLastName.Name = "lblLastName"
         Me.lblLastName.Size = New System.Drawing.Size(78, 15)
@@ -78,7 +78,7 @@ Partial Class Registration
         '
         Me.lblAge.AutoSize = True
         Me.lblAge.Font = New System.Drawing.Font("Roboto Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAge.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lblAge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblAge.Location = New System.Drawing.Point(123, 190)
         Me.lblAge.Name = "lblAge"
         Me.lblAge.Size = New System.Drawing.Size(33, 15)
@@ -89,7 +89,7 @@ Partial Class Registration
         '
         Me.lblContact.AutoSize = True
         Me.lblContact.Font = New System.Drawing.Font("Roboto Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblContact.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lblContact.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblContact.Location = New System.Drawing.Point(123, 229)
         Me.lblContact.Name = "lblContact"
         Me.lblContact.Size = New System.Drawing.Size(114, 15)
@@ -100,7 +100,7 @@ Partial Class Registration
         '
         Me.lblBloodGroup.AutoSize = True
         Me.lblBloodGroup.Font = New System.Drawing.Font("Roboto Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBloodGroup.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lblBloodGroup.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblBloodGroup.Location = New System.Drawing.Point(123, 266)
         Me.lblBloodGroup.Name = "lblBloodGroup"
         Me.lblBloodGroup.Size = New System.Drawing.Size(88, 15)
@@ -111,7 +111,7 @@ Partial Class Registration
         '
         Me.lblHowManyTimes.AutoSize = True
         Me.lblHowManyTimes.Font = New System.Drawing.Font("Roboto Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHowManyTimes.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lblHowManyTimes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblHowManyTimes.Location = New System.Drawing.Point(123, 307)
         Me.lblHowManyTimes.Name = "lblHowManyTimes"
         Me.lblHowManyTimes.Size = New System.Drawing.Size(120, 15)
@@ -120,6 +120,7 @@ Partial Class Registration
         '
         'txtFirstName
         '
+        Me.txtFirstName.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtFirstName.Font = New System.Drawing.Font("Roboto", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFirstName.Location = New System.Drawing.Point(303, 105)
         Me.txtFirstName.Name = "txtFirstName"
@@ -128,6 +129,7 @@ Partial Class Registration
         '
         'txtLastName
         '
+        Me.txtLastName.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtLastName.Font = New System.Drawing.Font("Roboto", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtLastName.Location = New System.Drawing.Point(303, 143)
         Me.txtLastName.Name = "txtLastName"
@@ -136,6 +138,7 @@ Partial Class Registration
         '
         'txtAge
         '
+        Me.txtAge.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtAge.Font = New System.Drawing.Font("Roboto", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAge.Location = New System.Drawing.Point(303, 185)
         Me.txtAge.Name = "txtAge"
@@ -144,6 +147,7 @@ Partial Class Registration
         '
         'txtContact
         '
+        Me.txtContact.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtContact.Font = New System.Drawing.Font("Roboto", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtContact.Location = New System.Drawing.Point(303, 224)
         Me.txtContact.Name = "txtContact"
@@ -152,6 +156,7 @@ Partial Class Registration
         '
         'txtHowManyTimes
         '
+        Me.txtHowManyTimes.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtHowManyTimes.Font = New System.Drawing.Font("Roboto", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHowManyTimes.Location = New System.Drawing.Point(303, 302)
         Me.txtHowManyTimes.Name = "txtHowManyTimes"
@@ -160,9 +165,9 @@ Partial Class Registration
         '
         'btnSubmit
         '
-        Me.btnSubmit.BackColor = System.Drawing.Color.Red
+        Me.btnSubmit.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btnSubmit.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSubmit.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnSubmit.ForeColor = System.Drawing.Color.DarkRed
         Me.btnSubmit.Location = New System.Drawing.Point(248, 353)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(99, 27)
@@ -172,9 +177,9 @@ Partial Class Registration
         '
         'btnBack
         '
-        Me.btnBack.BackColor = System.Drawing.Color.Yellow
-        Me.btnBack.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBack.ForeColor = System.Drawing.Color.DarkRed
+        Me.btnBack.BackColor = System.Drawing.Color.Maroon
+        Me.btnBack.Font = New System.Drawing.Font("Roboto Medium", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnBack.Location = New System.Drawing.Point(502, 367)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(79, 27)
@@ -184,7 +189,9 @@ Partial Class Registration
         '
         'ComboBloodG
         '
+        Me.ComboBloodG.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.ComboBloodG.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBloodG.ForeColor = System.Drawing.Color.Maroon
         Me.ComboBloodG.FormattingEnabled = True
         Me.ComboBloodG.Items.AddRange(New Object() {"A", "B", "O", "AB", "A+", "B+", "O+", "A-", "B-", "O-"})
         Me.ComboBloodG.Location = New System.Drawing.Point(303, 260)
@@ -194,14 +201,14 @@ Partial Class Registration
         '
         'btnClear
         '
-        Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.btnClear.Font = New System.Drawing.Font("Roboto Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.ForeColor = System.Drawing.Color.Red
-        Me.btnClear.Location = New System.Drawing.Point(380, 353)
+        Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnClear.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.ForeColor = System.Drawing.Color.DarkRed
+        Me.btnClear.Location = New System.Drawing.Point(366, 353)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(87, 27)
+        Me.btnClear.Size = New System.Drawing.Size(101, 27)
         Me.btnClear.TabIndex = 16
-        Me.btnClear.Text = "Clear"
+        Me.btnClear.Text = "CLEAR"
         Me.btnClear.UseVisualStyleBackColor = False
         '
         'Registration
