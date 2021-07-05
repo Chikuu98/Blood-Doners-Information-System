@@ -31,19 +31,21 @@ Partial Class AdminLogin
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'lbladmintopic
         '
         Me.lbladmintopic.AutoSize = True
         Me.lbladmintopic.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lbladmintopic.Font = New System.Drawing.Font("Roboto", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbladmintopic.Font = New System.Drawing.Font("Roboto", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbladmintopic.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lbladmintopic.Location = New System.Drawing.Point(209, 60)
+        Me.lbladmintopic.Location = New System.Drawing.Point(105, 9)
         Me.lbladmintopic.Name = "lbladmintopic"
-        Me.lbladmintopic.Size = New System.Drawing.Size(217, 44)
+        Me.lbladmintopic.Size = New System.Drawing.Size(417, 77)
         Me.lbladmintopic.TabIndex = 0
-        Me.lbladmintopic.Text = "Admin Area"
+        Me.lbladmintopic.Text = "ADMIN AREA"
         '
         'lblusername
         '
@@ -134,12 +136,23 @@ Partial Class AdminLogin
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.lbladmintopic)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(636, 90)
+        Me.Panel1.TabIndex = 9
+        '
         'AdminLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Maroon
         Me.ClientSize = New System.Drawing.Size(636, 379)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
@@ -148,11 +161,12 @@ Partial Class AdminLogin
         Me.Controls.Add(Me.txtUserName)
         Me.Controls.Add(Me.lblpassword)
         Me.Controls.Add(Me.lblusername)
-        Me.Controls.Add(Me.lbladmintopic)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "AdminLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AdminLogin"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -167,4 +181,5 @@ Partial Class AdminLogin
     Friend WithEvents btnClear As Button
     Friend WithEvents btnExit As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents Panel1 As Panel
 End Class

@@ -26,7 +26,6 @@ Partial Class PublicDetailShow
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.DetailsDataGridView = New System.Windows.Forms.DataGridView()
-        Me.btnBack = New System.Windows.Forms.Button()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -35,25 +34,28 @@ Partial Class PublicDetailShow
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DetailsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Donner_detailsDataSet = New RAD_Project.donner_detailsDataSet()
+        Me.btnBack = New System.Windows.Forms.Button()
         Me.DetailsTableAdapter = New RAD_Project.donner_detailsDataSetTableAdapters.DetailsTableAdapter()
         Me.TableAdapterManager = New RAD_Project.donner_detailsDataSetTableAdapters.TableAdapterManager()
         Me.SeeResultToolStrip = New System.Windows.Forms.ToolStrip()
         Me.BloodTypeToolStripLabel = New System.Windows.Forms.ToolStripLabel()
         Me.BloodTypeToolStripTextBox = New System.Windows.Forms.ToolStripTextBox()
         Me.SeeResultToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.DetailsDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DetailsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Donner_detailsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SeeResultToolStrip.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(174, 27)
+        Me.Label1.Location = New System.Drawing.Point(176, 3)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(311, 38)
         Me.Label1.TabIndex = 2
@@ -79,23 +81,11 @@ Partial Class PublicDetailShow
         Me.DetailsDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
         Me.DetailsDataGridView.DataSource = Me.DetailsBindingSource
         Me.DetailsDataGridView.GridColor = System.Drawing.Color.Red
-        Me.DetailsDataGridView.Location = New System.Drawing.Point(12, 68)
+        Me.DetailsDataGridView.Location = New System.Drawing.Point(12, 72)
         Me.DetailsDataGridView.Name = "DetailsDataGridView"
         Me.DetailsDataGridView.ReadOnly = True
-        Me.DetailsDataGridView.Size = New System.Drawing.Size(642, 375)
+        Me.DetailsDataGridView.Size = New System.Drawing.Size(642, 371)
         Me.DetailsDataGridView.TabIndex = 3
-        '
-        'btnBack
-        '
-        Me.btnBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.btnBack.Font = New System.Drawing.Font("Roboto Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBack.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnBack.Location = New System.Drawing.Point(512, 451)
-        Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(67, 31)
-        Me.btnBack.TabIndex = 4
-        Me.btnBack.Text = "Back"
-        Me.btnBack.UseVisualStyleBackColor = False
         '
         'DataGridViewTextBoxColumn1
         '
@@ -149,6 +139,18 @@ Partial Class PublicDetailShow
         Me.Donner_detailsDataSet.DataSetName = "donner_detailsDataSet"
         Me.Donner_detailsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
+        'btnBack
+        '
+        Me.btnBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnBack.Font = New System.Drawing.Font("Roboto Medium", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnBack.Location = New System.Drawing.Point(512, 451)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(67, 31)
+        Me.btnBack.TabIndex = 4
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = False
+        '
         'DetailsTableAdapter
         '
         Me.DetailsTableAdapter.ClearBeforeFill = True
@@ -177,15 +179,25 @@ Partial Class PublicDetailShow
         '
         'BloodTypeToolStripTextBox
         '
+        Me.BloodTypeToolStripTextBox.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BloodTypeToolStripTextBox.Name = "BloodTypeToolStripTextBox"
-        Me.BloodTypeToolStripTextBox.Size = New System.Drawing.Size(100, 23)
+        Me.BloodTypeToolStripTextBox.Size = New System.Drawing.Size(100, 25)
         '
         'SeeResultToolStripButton
         '
         Me.SeeResultToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
         Me.SeeResultToolStripButton.Name = "SeeResultToolStripButton"
-        Me.SeeResultToolStripButton.Size = New System.Drawing.Size(61, 19)
+        Me.SeeResultToolStripButton.Size = New System.Drawing.Size(61, 22)
         Me.SeeResultToolStripButton.Text = "SeeResult"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Location = New System.Drawing.Point(0, 28)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(674, 44)
+        Me.Panel1.TabIndex = 6
         '
         'PublicDetailShow
         '
@@ -193,11 +205,11 @@ Partial Class PublicDetailShow
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(674, 494)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.SeeResultToolStrip)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.DetailsDataGridView)
         Me.Controls.Add(Me.btnExit)
-        Me.Controls.Add(Me.Label1)
         Me.ForeColor = System.Drawing.Color.Maroon
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "PublicDetailShow"
@@ -208,6 +220,8 @@ Partial Class PublicDetailShow
         CType(Me.Donner_detailsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SeeResultToolStrip.ResumeLayout(False)
         Me.SeeResultToolStrip.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -231,4 +245,5 @@ Partial Class PublicDetailShow
     Friend WithEvents BloodTypeToolStripLabel As ToolStripLabel
     Friend WithEvents BloodTypeToolStripTextBox As ToolStripTextBox
     Friend WithEvents SeeResultToolStripButton As ToolStripButton
+    Friend WithEvents Panel1 As Panel
 End Class

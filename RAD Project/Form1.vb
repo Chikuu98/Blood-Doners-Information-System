@@ -14,7 +14,11 @@
         Me.Hide()
     End Sub
 
-    Private Sub lblwelcome_Click(sender As Object, e As EventArgs) Handles lblwelcome.Click
+    Private Sub lblwelcome_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub lbldesc_Click(sender As Object, e As EventArgs) Handles lbldesc.Click
 
     End Sub
 End Class

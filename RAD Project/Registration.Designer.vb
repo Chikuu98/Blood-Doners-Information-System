@@ -38,17 +38,19 @@ Partial Class Registration
         Me.btnBack = New System.Windows.Forms.Button()
         Me.ComboBloodG = New System.Windows.Forms.ComboBox()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblreg
         '
         Me.lblreg.AutoSize = True
-        Me.lblreg.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblreg.Font = New System.Drawing.Font("Roboto", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblreg.BackColor = System.Drawing.Color.Transparent
+        Me.lblreg.Font = New System.Drawing.Font("Roboto", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblreg.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblreg.Location = New System.Drawing.Point(164, 20)
+        Me.lblreg.Location = New System.Drawing.Point(116, 9)
         Me.lblreg.Name = "lblreg"
-        Me.lblreg.Size = New System.Drawing.Size(280, 44)
+        Me.lblreg.Size = New System.Drawing.Size(361, 58)
         Me.lblreg.TabIndex = 0
         Me.lblreg.Text = "REGISTRATION"
         '
@@ -211,12 +213,23 @@ Partial Class Registration
         Me.btnClear.Text = "CLEAR"
         Me.btnClear.UseVisualStyleBackColor = False
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.lblreg)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(603, 74)
+        Me.Panel1.TabIndex = 17
+        '
         'Registration
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkRed
         Me.ClientSize = New System.Drawing.Size(603, 406)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.ComboBloodG)
         Me.Controls.Add(Me.btnBack)
@@ -232,11 +245,12 @@ Partial Class Registration
         Me.Controls.Add(Me.lblAge)
         Me.Controls.Add(Me.lblLastName)
         Me.Controls.Add(Me.lblFirstName)
-        Me.Controls.Add(Me.lblreg)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Registration"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Registration"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -258,4 +272,5 @@ Partial Class Registration
     Friend WithEvents btnBack As Button
     Friend WithEvents ComboBloodG As ComboBox
     Friend WithEvents btnClear As Button
+    Friend WithEvents Panel1 As Panel
 End Class

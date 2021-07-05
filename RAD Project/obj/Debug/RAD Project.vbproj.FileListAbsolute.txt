@@ -28,3 +28,4 @@ D:\.net\RAD Project\RAD Project\obj\Debug\RAD Project.xml
 D:\.net\RAD Project\RAD Project\obj\Debug\RAD Project.pdb
 D:\.net\RAD Project\RAD Project\obj\Debug\RAD_Project.DonnerDetails.resources
 D:\.net\RAD Project\RAD Project\obj\Debug\RAD_Project.PublicDetailShow.resources
+D:\.net\RAD Project\RAD Project\obj\Debug\RAD_Project.FrmLoading.resources
